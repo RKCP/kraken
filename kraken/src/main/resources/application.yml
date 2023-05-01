@@ -1,0 +1,16 @@
+server:
+  servlet:
+    context-path: /krakenapi
+
+spring:
+  application:
+    name: kraken-test
+  restTemplate:
+    timeout: 5000
+    autoconfigure:
+      exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myDb
+    username: user1
+    password: pass

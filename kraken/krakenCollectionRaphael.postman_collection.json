@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "d2ca6d69-fbd2-46fa-b975-6b2460362cd7",
+		"name": "Kraken Collection Raphael",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST Filtered Outages",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "EltgJ5G8m44IzwE6UN2Y4B4NjPW77Zk6FJK3lL23",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/krakenapi/site-outages/norwich-pear-tree",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"krakenapi",
+						"site-outages",
+						"norwich-pear-tree"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Site Info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "EltgJ5G8m44IzwE6UN2Y4B4NjPW77Zk6FJK3lL23",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/krakenapi/site-info/norwich-pear-tree",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"krakenapi",
+						"site-info",
+						"norwich-pear-tree"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Outages",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "EltgJ5G8m44IzwE6UN2Y4B4NjPW77Zk6FJK3lL23",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/krakenapi/outages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"krakenapi",
+						"outages"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
